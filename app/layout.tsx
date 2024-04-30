@@ -27,10 +27,12 @@ export default function RootLayout({
   return (
     <html className={karrik.className} lang="en">
       <body className="flex flex-col justify-center items-center p-8 sm:p-12">
+        <a href="/" >
           <h1 className="text-5xl sm:text-8xl">Kim & Yuns</h1>
-          <div className="w-80 flex">
-            <CurvedText text="Established in 2024" radius={90} centerX={0} centerY={0} />  
-          </div>
+        </a>
+        <div className="w-80 flex">
+          <CurvedText text="Established in 2024" radius={90} centerX={0} centerY={0} />  
+        </div>
         {children}
       </body>
     </html>
