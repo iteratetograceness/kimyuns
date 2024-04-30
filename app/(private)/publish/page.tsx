@@ -1,4 +1,4 @@
-export function Publish() {
+export default function Publish() {
     return (
         <form>
             input with issue # (disabled)
