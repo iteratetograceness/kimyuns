@@ -12,7 +12,6 @@ export default async function Publish() {
   
     return (
         <form>
-            
             input with issue # (disabled)
             date picker
             announcements input
