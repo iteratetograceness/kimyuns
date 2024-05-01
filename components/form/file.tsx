@@ -6,12 +6,12 @@ export function InputFile({
 }: {
     name: string
 }) {
-    const id = name.toLowerCase()
+    const id = name.replace(/\s+/g, '-').toLowerCase();
     return (
       <>
       <div className="grid w-full max-w-sm items-center gap-1.5">
         <Label htmlFor={id}>{name}</Label>
-        <Input id={id} name={id} type="file" />
+        <Input id={id} name={id} type="file" required />
       </div>
       </>
     )

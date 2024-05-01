@@ -8,7 +8,6 @@ export interface Issue {
 }
 
 export interface Event {
-    title: string;
     description: string;
-    photos?: string[];
+    photo?: string;
 }

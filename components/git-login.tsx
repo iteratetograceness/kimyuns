@@ -1,6 +1,7 @@
 'use client';
 
 import { createClient } from "@/utils/auth/client"
+import { Button } from "./ui/button";
 
 async function signInWithGithub() {
     const supabase = createClient()
@@ -14,6 +15,6 @@ async function signInWithGithub() {
   
 export function GitLogin() {
     return (
-        <button onClick={signInWithGithub}>Sign in with GitHub</button>
+        <Button onClick={signInWithGithub}>Sign in with GitHub</Button>
     )  
 }

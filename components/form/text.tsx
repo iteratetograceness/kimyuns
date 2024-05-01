@@ -12,7 +12,7 @@ export function TextareaWithLabel({
   return (
     <div className="grid w-full gap-1.5">
       <Label htmlFor={id}>{name}</Label>
-      <Textarea placeholder={placeholder} id={id} name={id} />
+      <Textarea placeholder={placeholder} id={id} name={id} required />
     </div>
   )
 }

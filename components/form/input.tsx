@@ -19,7 +19,7 @@ export function InputWithLabel({
     <>
       <div className="grid w-full max-w-sm items-center gap-1.5">
         <Label htmlFor={id}>{name}</Label>
-        <Input disabled={disabled} type={type} id={id} name={id} placeholder={placeholder} value={value} />
+        <Input required disabled={disabled} type={type} id={id} name={id} placeholder={placeholder} value={value} />
       </div>
     </>
   )

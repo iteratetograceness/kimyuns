@@ -19,7 +19,7 @@ export function DatePicker() {
 
   return (
     <>
-    <input type="hidden" name="date" value={date ? date.toISOString() : ""} />
+    <input type="hidden" name="date" value={date ? date.toISOString() : ""} required />
     <div className="grid w-full max-w-sm items-center gap-1.5">
           <Label htmlFor="date">Date
           </Label>

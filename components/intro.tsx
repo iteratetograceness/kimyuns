@@ -1,7 +1,11 @@
-export function Intro() {
+export function Intro({
+    data
+}: {
+    data: string;
+}) {
     return (
         <div>
-            This month was...
+            {data}
         </div>
     )
 }
