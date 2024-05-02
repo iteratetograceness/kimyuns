@@ -16,7 +16,7 @@ const CurvedText = ({ text, radius, centerX, centerY, textHeight = 0 }: CurvedTe
         style={{ overflow: 'visible' }}
       >
         <path id="curved-path" d={pathData} fill="none" />
-        <text className="text-md">
+        <text className="text-md fill-primary">
           <textPath xlinkHref="#curved-path" startOffset="25%">
             {text}
           </textPath>
